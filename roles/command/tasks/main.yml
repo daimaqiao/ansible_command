@@ -1,0 +1,16 @@
+---
+- name: run {{command_script}}
+  script: "{{command_script}}"
+  register: command_result
+  tags: command
+
+- name: show code
+  debug: var=command_result.rc
+  tags: command
+- name: show error
+  debug: var=command_result.stderr
+  tags: command
+- name: show output
+  debug: var=command_result.stdout_lines
+  tags: command
+

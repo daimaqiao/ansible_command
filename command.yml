@@ -1,0 +1,7 @@
+---
+- hosts: command
+  name: run command
+  become: True
+  roles:
+    - role: command
+

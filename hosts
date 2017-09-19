@@ -1,0 +1,8 @@
+[command]
+# 列出IP地址，在远程服务器上运行command.sh
+192.168.56.241
+
+[command:vars]
+ansible_user=abc
+#ansible_become_pass=no-password
+
